@@ -1,0 +1,58 @@
+.detailsPage {
+    margin-bottom: 100px;
+}
+
+.detailsPage__body {
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+}
+
+.detailsPage__body button {
+    padding: 7px;
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+.detailsPage__body img {
+    padding-right: 10px;
+}
+
+.detailsPage__body button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+.detailsPage__heading {
+    color: white;
+    background-color: gray;
+    padding: 8px;
+    font-size: x-large;
+}
+
+.detailsPage__body p {
+    width: 100%;
+}
+
+.detailsPage__image {
+    width: 320px;
+}
+
+.detailsPage__price {
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    .detailsPage__body {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .detailsPage__heading {
+        display: flex;
+        justify-content: center;
+    }
+}

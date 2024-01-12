@@ -1,0 +1,37 @@
+.contact {
+  background-color: gray;
+  width: fit-content;
+  padding: 30px 45px;
+  margin: 15vh auto 30vh auto;
+  display: flex;
+  gap: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact__details span {
+  font-weight: lighter;
+}
+
+.contact__phoneIcon {
+  font-size: 170px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 10px;
+    margin: 15vh auto 10vh auto;
+    width: 60vw;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+
+  .contact__phoneIcon {
+    display: none;
+  }
+}

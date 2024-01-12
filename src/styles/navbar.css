@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav .nav__normalNav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.nav__normalNav .nav__links{
+    list-style-type: none;
+    display: inherit;
+    margin-top: 17px;
+    gap: 20px;
+}
+
+.nav__links a{
+    text-transform: uppercase;
+}
+
+.nav__links a:hover{
+    color: blue;
+}
+
+.active {
+    color: steelblue;
+    font-weight: 600;
+}
+
+.nav__socialIcons{
+    display: inherit;
+    gap: 20px;
+    margin-right: 20px;
+    margin-top: 17px;
+}
+
+.nav__socialIcons a{
+    font-size: large;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.whatsapp__icon:hover{
+    color: green;
+}
+
+.instagram__icon:hover{
+    color: purple;
+}
+
+.snapchat__icon:hover {
+    color: yellow;
+}
+
+.tiktok__icon:hover {
+    color: pink;
+}
+
+.nav__responsiveNav{
+    display: none;
+}
+
+.nav__bars{
+    margin-top: 17px;
+    display: none;
+}
+
+.nav__xmark{
+    margin-top: 17px;
+    display: none;
+}
+
+.nav__responsiveLinks {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav__normalNav .nav__links{
+        display: none;
+    }
+    
+    .nav__normalNav .nav__socialIcons{
+        display: none;
+    }
+
+    .nav__bars{
+        display: block;
+    }
+
+    .nav__xmark {
+        display: block;
+    }
+
+    .nav__xmark button {
+        background-color: transparent;
+        font-size: large;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav__bars button {
+        background-color: transparent;
+        font-size: large;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav__responsiveAllLinks {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav__responsiveLinks{
+        display: block;
+        justify-items: flex-end;
+        list-style: none;
+        line-height: 50px;
+        background-color: aqua;
+        position: absolute;
+        z-index: 5;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 10px;
+    }
+
+    .nav__responsiveLinksContainer{
+        display: flex;
+        flex-direction: column;
+        place-items: flex-end;
+    }
+
+    .nav__responsiveLinksContainer .nav__links {
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .nav__socialIcons {
+        margin-right: -21px;
+    }
+
+    .nav__socialIcons a{
+        margin-right: 10px;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    .animate__animated.animate__slideOutRight, .animate__animated.animate__slideInRight {
+        animation-duration: 0.7s;
+    }
+
+    .stop {
+        display: none;
+    }
+}
