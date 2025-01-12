@@ -1,15 +1,20 @@
-
+import React, { useState } from "react";
+import { bsmCourses } from "../courses";
 
 export const BsmPage = () => {
-  const courses = [
-    { title: "Expose on Exfoliation", code: "BSM 111" },
-    { title: "Introduction to body scrub making", code: "BSM 112" },
-    { title: "Formula creation and conversion", code: "BSM 113" },
-    { title: "Emulsified body scrubs", code: "BSM 114" },
-    { title: "Foaming body scrubs", code: "BSM 115" },
-    { title: "Body polish/Creamy scrubs", code: "BSM 116" },
-    { title: "Importance of research as a formulator", code: "BSM 117" },
-  ];
+  
+  const [selectedCourse, setSelectedCourse] = useState(null); // To track the selected course
+  const [isModalOpen, setIsModalOpen] = useState(false); // To toggle the modal
+
+  const openModal = (course) => {
+    setSelectedCourse(course);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedCourse(null);
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
@@ -23,10 +28,11 @@ export const BsmPage = () => {
               <tr className="bg-pink-200 text-pink-700">
                 <th className="px-4 py-2 text-lg font-semibold">Course Title</th>
                 <th className="px-4 py-2 text-lg font-semibold">Course Code</th>
+                <th className="px-4 py-2 text-lg font-semibold">Actions</th>
               </tr>
             </thead>
             <tbody>
-              {courses.map((course, index) => (
+              {bsmCourses.map((course, index) => (
                 <tr
                   key={index}
                   className={`${
@@ -35,13 +41,42 @@ export const BsmPage = () => {
                 >
                   <td className="px-4 py-2 text-pink-600">{course.title}</td>
                   <td className="px-4 py-2 text-pink-600">{course.code}</td>
+                  <td className="px-4 py-2">
+                    <button
+                      onClick={() => openModal(course)}
+                      className="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600"
+                    >
+                      View Outline
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+            <h3 className="text-xl font-bold text-pink-600 mb-4">
+              {selectedCourse.title}
+            </h3>
+            <p className="text-gray-700 whitespace-pre-line">
+              {selectedCourse.outline}
+            </p>
+            <div className="mt-6 text-right">
+              <button
+                onClick={closeModal}
+                className="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
-
