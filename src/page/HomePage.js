@@ -1,5 +1,6 @@
 import { FaWhatsapp, FaInstagram, FaEnvelope, FaTiktok } from 'react-icons/fa6'
 import logo from '../img/margy_glow.jpg'
+import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
     const message = "Hello, I want to pay for the ________  course";
@@ -39,13 +40,13 @@ export const HomePage = () => {
                     { text: "Body butter making course (BBM) - 80k ", link: "/bbm-course" },
                     { text: "General courses + free brightening body oil recipee + free costing and marketing course - 200k", link: "/gct-course" },
                 ].map((item, index) => (
-                    <a
+                    <Link
                     key={index}
                     href={item.link}
                     className="block bg-white text-pink-600 font-semibold text-center py-3 px-4 rounded-lg shadow-lg mb-4 hover:bg-pink-50"
                     >
                     {item.text}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
