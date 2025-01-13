@@ -28,7 +28,7 @@ export const BsmPage1 = () => {
               <tr className="bg-pink-200 text-pink-700">
                 <th className="px-4 py-2 text-lg font-semibold">Course Title</th>
                 <th className="px-4 py-2 text-lg font-semibold">Course Code</th>
-                <th className="px-4 py-2 text-lg font-semibold">Actions</th>
+                <th className="px-4 py-2 text-lg font-semibold">Course outline</th>
               </tr>
             </thead>
             <tbody>

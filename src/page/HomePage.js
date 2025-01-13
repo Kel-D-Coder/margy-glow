@@ -12,8 +12,8 @@ export const HomePage = () => {
             </div>
             {/* Logo and Header */}
             <div className="text-center">
-                <h1 className="mt-4 text-xl font-bold text-pink-600">Gloss on worries gone 💕</h1>
-                <p className="text-pink-500">Welcome to Margy Glow 💗</p>
+                <h1 className="mt-4 text-xl font-bold text-pink-600">Welcome to Margy Glow 💕</h1>
+                <p className="text-pink-500">Your skin is our priority 💗</p>
             </div>
     
             {/* Social Links */}
