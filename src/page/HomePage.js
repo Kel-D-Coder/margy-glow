@@ -42,7 +42,7 @@ export const HomePage = () => {
                 ].map((item, index) => (
                     <Link
                     key={index}
-                    href={item.link}
+                    to={item.link}
                     className="block bg-white text-pink-600 font-semibold text-center py-3 px-4 rounded-lg shadow-lg mb-4 hover:bg-pink-50"
                     >
                     {item.text}
