@@ -31,12 +31,7 @@ export const GctPage = () => {
               </tr>
             </thead>
             <tbody>
-              {/* Paid Courses Section */}
-              <tr className="bg-pink-300 text-pink-800">
-                <td colSpan="3" className="px-4 py-2 font-bold text-center">
-                  Paid Courses
-                </td>
-              </tr>
+             
               {gctPaidCourses.map((course, index) => (
                 <tr
                   key={index}

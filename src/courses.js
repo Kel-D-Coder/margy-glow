@@ -73,7 +73,7 @@ export const bbmCourses = [
     {
         title: "Introduction to body butter making",
         code: "BBM 201",
-        outline: "1. What are body butters?\n2. Types of body butters.\n3. Differences between body butter, creams and lotions.\n4. Types of ingredients for body butter making.\n5. How to select ingredients for body butter.\n6. How to select ingredients for body butter.\n7. Assignment"
+        outline: "1. What are body butters?\n2. Types of body butters.\n3. Differences between body butter, creams and lotions.\n4. Types of ingredients for body butter making.\n5. How to select ingredients for body butter.\n6. Assignment"
     },
     {
         title: "Formula creation and conversion",
@@ -105,12 +105,12 @@ export const bbmCourses = [
 export const gctFreeCourses = [
     {
         title: "Body oil making",
-        code: "GCT 224",
+        code: "GCT 225",
         outline: "1. Introduction to body oil making.\n2. Types of oils.\n3. How to select oils.\n4. How to formulate a brightening body oil"
     },
     {
         title: "Research costing and marketing",
-        code: "GCT 225",
+        code: "GCT 226",
         outline: "1. Importance of research as a formulator.\n2. How to properly cost your products.\n3. Importance of proper marketing."
     },
 ];
@@ -148,47 +148,47 @@ export const gctPaidCourses = [
     },
     { 
         title: "Introduction to black soap making", 
-        code: "GCT 210", 
+        code: "GCT 211", 
         outline: "1. What is black soap?\n2. Origin of black soap.\n3. Types of black soap (base).\n4. Importance of measurement in black soap making.\n5. Benefits of black soap.\n6. Disadvantages of black soap when not properly formulated.\n7. Assignment."
     },
     { 
         title: "Whitening/Lightening black soap making", 
-        code: "GCT 211", 
+        code: "GCT 212", 
         outline: "1. Ways to activate black soap to whiten and lighten skin.\n2. Types of powders that whiten or lighten and lighten skin.\n3. Types of oils to whiten and lighten skin.\n4. How to select ingredients that whiten and lighten skin.\n5. How to prevent skin irritation or reaction in whitening black soap.\n6. How to make solid black soap without water.\n7. Detailed explanation and step by step on how to make whitening/lightening black soap.\n8. Assignment."
     },
     { 
         title: "Brightening black soap making", 
-        code: "GCT 212", 
+        code: "GCT 213", 
         outline: "1. Difference between whitening, lightening, brightening and glowing.\n2. Types of powders to brighten/glow skin.\n3. Types of oils to brighten/glow skin.\n4. How to select ingredients to brighten/glow skin.\n5. Step by step on how to make brightening black soap.\n6. Assignment."
     },
     { 
         title: "Acne/Pimple herbal black soap", 
-        code: "GCT 213", 
+        code: "GCT 214", 
         outline: "1. Types of powders that treat pimple/acne.\n2. Types of oils for acne/pimple black soap.\n3. How to select ingredients for acne/pimple black soap.\n4. Step by step on how to make black soap for acne and pimple treatment.\n5. Assignment."
     },
     { 
         title: "Liquid black soap making", 
-        code: "GCT 214", 
+        code: "GCT 215", 
         outline: "1. Types of powder for liquid black soap.\n2. Types of oils for liquid black soap.\n3. How to select ingredients for liquid soap.\n4. Step by step on how to make liquid black soap."
     },
     { 
         title: "Introduction to body butter making", 
-        code: "GCT 220", 
+        code: "GCT 221", 
         outline: "1. What are body butters?\n2. Types of body butters.\n3. Differences between body butter, creams and lotions.\n4. Types of ingredients for body butter making.\n5. How to select ingredients for body butter."
     },
     { 
         title: "All about PH", 
-        code: "GCT 221", 
+        code: "GCT 222", 
         outline: "1. What is ph?\n2. How to read ph(understanding ph).\n3. How to check ph of products.\n4. How to make PH buffer solutions to regulate (raise and lower) ph of products.\n5. Assignment."
     },
     { 
         title: "An-hydrous body butter making", 
-        code: "GCT 222", 
+        code: "GCT 223", 
         outline: "1. What are anhydrous body butters?\n2. How to make a simple body butter.\n3. How to make a full brightening body butter.\n4. Secret to achieving a fluffy whipped body butter.\n5. Assignment."
     },
     { 
         title: "Hydrous body butter making", 
-        code: "GCT 223", 
+        code: "GCT 224", 
         outline: "1. What are hydrous body butters?\n2 How to make a whole brightening body butter.\n3. How to check ph of body butter.\n4. How to adjust ph of body butter.\n5. Assignment."
     },
 ];
