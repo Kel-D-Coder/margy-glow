@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const HomePage = () => {
     const [showModal, setShowModal] = useState(false);
-    const message = "Hello, I want to pay for the ________ course";
+    const message = "Hello, I paid for ________ course";
     const encodedMessage = encodeURIComponent(message);
 
     const handleOpenModal = () => setShowModal(true);
@@ -27,7 +27,7 @@ export const HomePage = () => {
                 <a href={`https://wa.me/+2348055431383?text=${encodedMessage}`} className="text-pink-600 text-xl">
                     <FaWhatsapp />
                 </a>
-                <a href="https://www.instagram.com/lov_keeler/" className="text-pink-600 text-xl">
+                <a href="https://www.instagram.com/margy.glow?igsh=MTVuYmlieWk5cXh6ZA%3D%3D&utm_source=qr" className="text-pink-600 text-xl">
                     <FaInstagram />
                 </a>
                 <a href="mailto:margyglow1112@gmail.com" className="text-pink-600 text-xl">
@@ -86,7 +86,7 @@ export const HomePage = () => {
                                 Account Name: <span className="text-pink-600">Okeke Margareth Chinyere</span>
                             </p>
                         </div>
-                        <p className="mt-4">Send a screenshot of payment to WhatsApp via the link to be added to the group.</p>
+                        <p className="mt-4">Send a screenshot of payment to WhatsApp or Instagram by tapping the Whatsapp or Instagram icon at the top of your screen, to be added to the group.</p>
                         <p className="mt-4 font-bold">Dates:</p>
                         <ul className="list-disc list-inside pl-4">
                             <li>
