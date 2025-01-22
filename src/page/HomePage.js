@@ -38,10 +38,10 @@ export const HomePage = () => {
                 </a>
             </div>
 
-            {/* Links */}
+            {/* Links
             <div className="mt-8 w-full max-w-md">
                 {[
-                    { text: "Body scrub making course (BSM) - 50k 🎀", link: "/bsm-course" },
+                    { text: `Body scrub making course (BSM) - ${span}50k 🎀`, link: "/bsm-course" },
                     { text: "Black soap making course (BSM) - 70k 🛍️ 💕", link: "/bsm-course-2" },
                     { text: "Body butter making course (BBM) - 80k", link: "/bbm-course" },
                     {
@@ -57,7 +57,49 @@ export const HomePage = () => {
                         {item.text}
                     </Link>
                 ))}
+            </div> */}
+
+            {/* Links */}
+            <div className="mt-8 w-full max-w-md">
+                {[
+                    {
+                        text: "Body scrub making course (BSM)",
+                        originalPrice: "70k",
+                        discountedPrice: "50k",
+                        link: "/bsm-course",
+                    },
+                    {
+                        text: "Black soap making course (BSM)",
+                        originalPrice: "90k",
+                        discountedPrice: "70k",
+                        link: "/bsm-course-2",
+                    },
+                    {
+                        text: "Body butter making course (BBM)",
+                        originalPrice: "100k",
+                        discountedPrice: "80k",
+                        link: "/bbm-course",
+                    },
+                    {
+                        text: "General courses + free brightening body oil recipe + free costing and marketing course",
+                        originalPrice: "250k",
+                        discountedPrice: "200k",
+                        link: "/gct-course",
+                    },
+                ].map((item, index) => (
+                    <Link
+                        key={index}
+                        to={item.link}
+                        className="block bg-white text-pink-600 font-semibold text-center py-3 px-4 rounded-lg shadow-lg mb-4 hover:bg-pink-50"
+                    >
+                        {item.text} -{" "}
+                        <span className="line-through text-gray-500">{item.originalPrice}</span>{" "}
+                        <span className="text-pink-600">{item.discountedPrice}</span>
+                    </Link>
+                ))}
+                <p className="text-center text-red-500">Note: Early birds discount is valid till 28th of February </p>
             </div>
+
 
             {/* Payment Info Button */}
             <div className="mt-8">
