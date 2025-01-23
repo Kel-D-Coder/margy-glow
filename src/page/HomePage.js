@@ -97,7 +97,7 @@ export const HomePage = () => {
                         <span className="text-pink-600">{item.discountedPrice}</span>
                     </Link>
                 ))}
-                <p className="text-center text-pink-500">Note: Early birds discount is valid till 28th of February </p>
+                <p className="text-center text-pink-500">Note: Early birds discount is valid till 28th of February. Registration is limited to five(5) people per course </p>
             </div>
 
 
