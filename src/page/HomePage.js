@@ -132,10 +132,10 @@ export const HomePage = () => {
                         <p className="mt-4 font-bold">Dates:</p>
                         <ul className="list-disc list-inside pl-4">
                             <li>
-                                Single Courses: <span className="text-pink-600">26th - 31st March, 2025</span>
+                                Single Courses: <span className="text-pink-600">31th April - 5th May 2025</span>
                             </li>
                             <li>
-                                General Courses: <span className="text-pink-600">26th March - 8th April, 2025</span>
+                                General Courses: <span className="text-pink-600">31th April - 14th May 2025</span>
                             </li>
                         </ul>
                         <button
